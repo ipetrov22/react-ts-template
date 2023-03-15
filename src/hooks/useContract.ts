@@ -1,9 +1,9 @@
 import { Contract } from '@ethersproject/contracts'
 import { useWeb3React } from '@web3-react/core'
+import { UniswapInterfaceMulticall } from 'abis/types'
 import MulticallABI from 'abis/uniswap-interface-multicall.json'
 import { MULTICALL_ADDRESS } from 'constants/addresses'
 import { useMemo } from 'react'
-import { UniswapInterfaceMulticall } from 'abis/types'
 
 import { getContract } from '../utils'
 

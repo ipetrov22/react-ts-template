@@ -8,6 +8,7 @@ import application from './application/reducer'
 import connection from './connection/reducer'
 import { updateVersion } from './global/actions'
 import transactions from './transactions/reducer'
+import user from './user/reducer'
 import wallets from './wallets/reducer'
 
 const PERSISTED_KEYS: string[] = ['transactions']
@@ -15,6 +16,7 @@ const PERSISTED_KEYS: string[] = ['transactions']
 const store = configureStore({
   reducer: {
     application,
+    user,
     connection,
     transactions,
     wallets,

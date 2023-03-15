@@ -46,7 +46,7 @@ export default function Updater() {
         DEFAULT_TXN_DISMISS_MS
       )
     },
-    [addPopup, dispatch, transactions]
+    [addPopup, dispatch]
   )
 
   const pendingTransactions = useMemo(() => (chainId ? transactions[chainId] ?? {} : {}), [chainId, transactions])

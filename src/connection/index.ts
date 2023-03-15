@@ -7,6 +7,7 @@ import { Connector } from '@web3-react/types'
 import { WalletConnect } from '@web3-react/walletconnect'
 import { SupportedChainId } from 'constants/chains'
 
+import LOGO_URL from '../assets/svg/logo.svg'
 import { RPC_URLS } from '../constants/networks'
 import { RPC_PROVIDERS } from '../constants/providers'
 
@@ -82,6 +83,9 @@ const [web3CoinbaseWallet, web3CoinbaseWalletHooks] = initializeConnector<Coinba
       actions,
       options: {
         url: RPC_URLS[SupportedChainId.MAINNET][0],
+        appName: 'Placeholder', // TODO: Update name
+        appLogoUrl: LOGO_URL, // TODO: Make sure logo is updated
+        reloadOnDisconnect: false,
       },
       onError,
     })
